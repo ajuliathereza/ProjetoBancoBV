@@ -1,2 +1,2 @@
-# ProjetoBancoBV
-Site da Dindin (empresa fictícia)
+# dindin.projetobv
+Plataforma de conteúdo sobre Educação Financeira

@@ -1,0 +1,276 @@
+/*===================================SECTION INDEX=========================================*/
+
+section#index .container{
+    margin-top: 70px;
+    display: flex;
+    justify-content: center;
+}
+
+.desc {
+    margin-right: 50px;
+}
+
+.desc h1 {
+    color: #FF4081
+}
+
+.desc p {
+    margin-bottom: 25px;
+    font-size: 0.875rem;
+}
+
+#index img {
+    height: 300px;
+}
+
+section h1 {
+    color: #009688;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+section p {
+    color: #555555;
+    font-size: 15px;
+    margin-top: 15px;
+}
+
+section a {
+    color: #FF4081;
+    font-size: 13px;
+    border: 2px solid #FF4081;
+    border-radius: 62px;
+    text-decoration: none;
+    padding: 10px;
+    transition: 300ms;
+}
+
+section a:hover {
+    color: #fff;
+    background: #FF4081;
+}
+
+
+/*===================================SECTION CARDS=========================================*/
+
+#cards {
+    background-color: #F6F6F6;
+    margin-top: 70px;
+}
+
+#cards .container {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding: 50px;
+}
+
+#cards .container h2 {
+    text-align: center;
+    color: #FF4081;
+    font-size: 19px;
+    margin-top: 30px;
+    font-weight: bold;
+}
+
+#cards .container p {
+    text-align: center;
+    margin-top: 30px;
+}
+
+#cards .container a {
+    color: #FFFFFF;
+    background-color: #FF4081;
+    font-size: 14px;
+    padding: 10px 30px;
+    text-align: center;
+    transition: 300ms;
+}
+
+#cards .container a:hover {
+    background-color:#fff;
+    color: #FF4081;
+}
+
+#cards div {
+    width: 250px;
+}
+
+#cards img {
+    height: 270px;
+}
+
+/*===================================SECTION DEPOIMENTOS=========================================*/
+section#depoimentos h1,
+p {
+    margin-top: 70px;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 500px;
+}
+
+.container h1 {
+    margin-bottom: 30px;
+    font-weight: bold;
+}
+
+section#depoimentos .depoimentos {
+    display: flex;
+    justify-content: space-between;
+}
+
+section#depoimentos .depoimentos div {
+    display: flex;
+    width: 450px;
+    align-items: center;
+}
+
+section#depoimentos div img {
+    height: 70px;
+    margin: 15px;
+}
+
+section#posts {
+    margin-top: 70px;
+    background-color: #F6F6F6;
+
+}
+
+/*===================================SECTION POSTS=========================================*/
+
+#posts {
+    padding: 50px;
+}
+
+.posts {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 35px;
+}
+
+
+.posts .post {
+    width: 230px;
+
+}
+
+.post h4 {
+    color: #419488;
+    font-size: 20px;
+}
+
+.posts .img {
+    margin-bottom: 10px;
+    height: 120px;
+    width: 100%;
+    background-color: #C4C4C4;
+}
+
+
+
+#posts p.bottom {
+    text-align: center;
+    margin-top: 70px;
+}
+
+@media (max-width:550px) {
+/*===================================SECTION INDEX=========================================*/
+      section#index .container {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+/*===================================SECTION DEPOIMENTOS=========================================*/
+
+        section#depoimentos .depoimentos div {
+         margin: 15px;
+        }
+/*===================================SECTION POSTS=========================================*/
+    .container {
+        width: 80%;
+    }
+
+    #posts .container h1 {
+        font-size: 18px;
+    }
+
+    .posts .post .img {
+        width: 100%;
+    }
+
+    .post {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 50px;
+    }
+
+    .post h4 {
+        font-size: 16px;
+    }
+
+    #posts p.bottom {
+        margin-top: 0px;
+    }
+}
+
+@media (max-width: 1024px) {
+/*===================================SECTION INDEX=========================================*/
+    section#index .container {
+        justify-content: center;
+    }
+
+    .desc h1 {
+        text-align: center;
+    }
+
+
+    .desc p.link {
+        text-align: center;
+        margin-top: 50px;
+    }
+
+/*===================================SECTION CARDS=========================================*/
+
+    section#cards div.container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        margin-bottom: 60px;
+    }
+
+/*===================================SECTION DEPOIMENTOS=========================================*/
+
+    section#depoimentos .depoimentos div {
+        flex-direction: column;
+        width: 100%;
+        margin-bottom: 50px;
+    }
+
+/*===================================SECTION POSTS=========================================*/
+
+     .posts {
+        flex-direction: column;
+    }
+
+    .posts .post {
+        display: flex;
+        margin-bottom: 50px;
+        width: 100%;
+    }
+
+    .posts .img {
+        margin-right: 30px;
+        margin-bottom: 10px;
+        height: 120px;
+        width: 200px;
+        background-color: #C4C4C4;
+    }
+
+    #posts p.bottom {
+        margin-top: 0px;
+    }
+}
+

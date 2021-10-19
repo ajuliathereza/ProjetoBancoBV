@@ -1,0 +1,112 @@
+/*============================ MAIN =====================================*/
+main h1{
+    font-size: 35px;
+    color: #FF4081;
+    margin-left: 20%;
+    margin-top: 5%;
+    margin-right: 20%;
+}
+
+main form{
+    display: flex;
+    font-family: 'Nunito', sans-serif;
+}
+
+main form #blocos{
+    display: table-cell;
+    width: 50%;
+    margin-left: 20%;
+    margin-bottom: 5%;
+    padding-right: 5%;
+}
+
+main form input, textarea{
+    border: 1px solid #686868;
+    box-sizing: border-box;
+    border-radius: 7px; 
+    width: 100%;
+    padding: 5px;
+    outline: none;
+    resize: none;
+    font-size: 17px;
+}
+
+main textarea{
+    height: 300px;
+}
+
+form div#img{
+    margin-right: 15%;
+}
+
+div#img img{
+    width: 100%;
+}
+
+main a button{
+    max-width: 100%;
+    min-width: 15%;
+    border: 2px solid #FF4081;
+    border-radius: 62px;
+    padding: 5px 30px;
+    background-color: #FF4081;
+    color:#FFFFFF;
+    font-size: 15px;
+    text-align: center;
+    cursor: pointer;
+    margin-bottom: 2%;
+}
+
+#botão:hover{
+    color:#FF4081;
+    background-color: #FFFFFF;
+}
+
+/*===================================RESPONSIVIDADE TELA PEQUENA=========================================*/
+
+@media only screen and (max-width:480px) {
+    
+    main form {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    main h1, div#img img{
+        margin-left: 10%;
+        font-size: 45px;
+    }
+
+    main form #blocos{
+        width: 80%;
+        margin-right: 15%;
+    }
+
+    main form input, textarea{
+        font-size: 17px;
+    }
+
+    form img {
+        margin-bottom: 10%;
+    }
+
+    main a button{
+        width: 100%;
+        font-size: 17px;
+    }
+}
+
+/*===================================RESPONSIVIDADE TELA GRANDE=========================================*/
+@media only screen and (min-width:2000px) {
+
+    main h1{
+        font-size: 45px;
+    }
+
+    main a button{
+        font-size: 23px;
+    }
+
+    main form input, textarea{
+        font-size: 25px;
+    }
+}

@@ -1,0 +1,114 @@
+/*----main----*/
+
+#desc {
+    margin-top: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.desc {
+    width: 300px;
+    margin-right: 15%;
+    font-size: small;
+}
+
+.desc h1 {
+    color:#ff4081;
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.desc p {
+    width: 461px;
+    display: flex;
+    left: 202px;
+    font-size: 15px;
+    line-height: 22px;
+    font-weight: 300;
+    text-align: inherit;
+    align-items: center;
+    margin-bottom: 10%;
+}
+
+.imagem img {
+    margin-top: 7%;
+    margin-bottom: 10%;
+    margin-left: 20%;
+    height: auto; 
+    width: auto; 
+    max-width: 300px; 
+    max-height: 300px;
+}
+
+hr{
+    margin: 40px;
+}
+/*===================================SECTION CURSO========================================*/
+
+#curso {
+    margin-top: 100px;
+    background: #f7f7f7;
+}
+
+.article {
+    align-content: space-around;
+    vertical-align: 30%;
+    text-align: left;
+    width: 100%;
+}
+
+article h2 {
+    margin-top: -22%;
+    margin-bottom: 20px;
+    margin-left: 25%;
+    color: #ff4081;
+    width: 461px;
+    display: flex;
+    justify-content: right;
+    left: 202px;
+    font-size: 20px;
+    display: flex;
+}
+
+article p {
+    font-weight: 200;
+    justify-content: center;
+    margin-left: 58%;
+}
+
+article p.margin {
+    margin-bottom: 50px;
+}
+
+#card_title{
+    max-width:1000px;
+    max-height:150px;
+    height: auto;
+}
+
+
+@media (max-width:1220px) {
+
+/*===================================SECTION DESC=========================================*/
+
+section#desc{
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+#desc {
+    padding: 20px;
+}
+
+#desc h1 {
+    font-size: 14pt;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+#desc .imagem img {
+    height: 300px;
+}
+
+}

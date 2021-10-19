@@ -1,0 +1,146 @@
+/*===================================SECTION DESC========================================*/
+
+#desc {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.desc {
+    width: 300px;
+}
+
+.desc h1 {
+    color:#009688;
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+
+.desc p {
+    font-size: 15px;
+    font-weight: 300;
+}
+
+.imagem img {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+/*===================================SECTION BLOG========================================*/
+
+#blog {
+    margin-top: 100px;
+    background: #E5E5E5;
+}
+
+article {
+    text-align: justify;
+    width: 100%;
+}
+
+article a {
+    text-decoration: none;
+    color: #000;
+}
+
+article h2 {
+    margin-bottom: 20px;
+    color: #ff4081;
+    font-weight: 500;
+}
+
+article p {
+    font-weight: 300;
+  
+}
+
+#blog .container {
+    display:grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: repeat(2,1fr);
+
+    gap:200px;
+    row-gap: 100px;
+    padding: 100px;
+
+}
+
+.img-artigo {
+    
+    height: 250px;
+    background: #c4c4c4;
+    margin-bottom: 30px;
+}
+
+@media (max-width:480px) {
+
+/*===================================SECTION DESC=========================================*/
+
+section#desc{
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+#desc {
+    padding: 20px;
+}
+
+#desc h1 {
+    font-size: 14pt;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+#desc .imagem img {
+    height: 300px;
+}
+    
+ /*===================================SECTION BLOG=========================================*/
+
+ #blog {
+    margin-top: 50px;
+}
+
+#blog .container   {
+    display: flex;
+    flex-direction: column;
+     padding: 30px;
+     row-gap: 50px;
+}  
+
+ .img-artigo {
+     height: 150px;
+ }
+
+ article a{
+     display: flex;
+     flex-direction: column;
+ }
+
+
+ a .img-artigo {
+    width:100%;
+    margin-right: 15px;
+}
+
+}
+  
+@media (max-width: 1024px) {
+
+    /*===================================SECTION BLOG=========================================*/
+    #blog .container   {
+        display: flex;
+        flex-direction: column;
+        padding: 30px;
+    }  
+
+    article a{
+        display: flex;
+    }
+
+    .img-artigo {
+        width: 400px;
+        height: 130px;
+        margin-right: 15px;
+    }
+}
